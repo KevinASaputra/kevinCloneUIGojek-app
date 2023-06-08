@@ -19,7 +19,7 @@ function searchBar() {
         />
       </View>
       <FontAwesome
-        style={{ paddingStart: 25 }}
+        style={{ paddingStart: 4 }}
         name="user-circle"
         size={34}
         color="white"
@@ -39,11 +39,11 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     flexDirection: "row",
-    width: "70%",
+    width: "80%",
     height: 35,
     alignItems: "center",
     marginVertical: 20,
-    marginHorizontal: 20,
+    marginHorizontal: 15,
     borderRadius: 30,
     backgroundColor: "white",
   },
