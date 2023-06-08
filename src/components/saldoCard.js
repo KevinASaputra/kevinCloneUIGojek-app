@@ -26,12 +26,17 @@ function saldoScreens() {
           <Text style={styles.TextFitur}>Pay</Text>
         </View>
         <View style={styles.primaryIcon}>
-          <AntDesign name="pluscircle" size={24} color="white" />
+          <AntDesign
+            style={{ paddingHorizontal: 33 }}
+            name="pluscircle"
+            size={24}
+            color="white"
+          />
           <Text style={styles.TextFitur}>Top Up</Text>
         </View>
         <View style={styles.primaryIcon}>
           <Octicons name="feed-rocket" size={24} color="white" />
-          <Text style={styles.TextFitur}>Eksplore</Text>
+          <Text style={styles.TextFitur}>Explore</Text>
         </View>
       </View>
     </View>
@@ -43,7 +48,7 @@ export default saldoScreens;
 const styles = StyleSheet.create({
   rootContainer: {
     padding: 16,
-    marginTop: 100,
+    marginTop: 20,
     marginHorizontal: 24,
     borderRadius: 16,
     backgroundColor: "#006dc6",
@@ -72,11 +77,10 @@ const styles = StyleSheet.create({
     color: "#00800f",
   },
   iconStyle: {
-    paddingHorizontal: 10,
+    paddingStart: 30,
     flexDirection: "row",
   },
   primaryIcon: {
-    marginHorizontal: 10,
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
