@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import DiscountScreen from "./src/screens/discountScreen";
-import SaldoScreens from "./src/screens/saldoScreen";
+import SaldoScreens from "./src/components/sadoCard";
 
 export default function App() {
   return (
