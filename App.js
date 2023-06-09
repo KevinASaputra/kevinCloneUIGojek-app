@@ -9,6 +9,9 @@ export default function App() {
     <View style={styles.rootScreens}>
       <SearchBar />
       <SaldoCard />
+      <View style={styles.menuGojek}>
+        <Text> test </Text>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,5 +20,9 @@ export default function App() {
 const styles = StyleSheet.create({
   rootScreens: {
     flex: 1,
+  },
+  menuGojek: {
+    padding: 100,
+    backgroundColor: "#ffffff",
   },
 });
