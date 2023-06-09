@@ -1,13 +1,12 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const iconChat = "../assets/icon_chat.svg";
+import iconGojek from "../constans/icon";
 
 function cardMenu(props) {
   return (
     <View>
-      <iconChat />
-      <Text></Text>
+      <Text style={iconGojek.iconChat}></Text>
     </View>
   );
 }

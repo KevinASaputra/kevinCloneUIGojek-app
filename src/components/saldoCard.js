@@ -5,6 +5,7 @@ import {
   TouchableHighlight,
   StyleSheet,
   Pressable,
+  TouchableOpacity,
 } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
@@ -13,6 +14,9 @@ import { Octicons } from "@expo/vector-icons";
 function saldoScreens() {
   return (
     <View style={styles.rootContainer}>
+      <View style={styles.cardKosong}>
+        <Text></Text>
+      </View>
       <View style={styles.cardSaldo}>
         <View style={styles.title}>
           <Text style={styles.desinText}> Gopay </Text>
@@ -22,22 +26,30 @@ function saldoScreens() {
       </View>
       <View style={styles.iconStyle}>
         <View style={styles.primaryIcon}>
-          <Feather name="arrow-up-circle" size={24} color="white" />
-          <Text style={styles.TextFitur}>Pay</Text>
+          <TouchableOpacity>
+            <Feather name="arrow-up-circle" size={24} color="white" />
+            <Text style={styles.TextFitur}>Pay</Text>
+          </TouchableOpacity>
         </View>
+
         <View style={styles.primaryIcon}>
-          <AntDesign
-            style={{ paddingHorizontal: 33 }}
-            name="pluscircle"
-            size={24}
-            color="white"
-          />
-          <Text style={styles.TextFitur}>Top Up</Text>
+          <TouchableOpacity>
+            <AntDesign
+              style={{ paddingHorizontal: 33 }}
+              name="pluscircle"
+              size={24}
+              color="white"
+            />
+            <Text style={styles.TextFitur}>Top Up</Text>
+          </TouchableOpacity>
         </View>
-        <View style={styles.primaryIcon}>
-          <Octicons name="feed-rocket" size={24} color="white" />
-          <Text style={styles.TextFitur}>Explore</Text>
-        </View>
+
+        <TouchableOpacity>
+          <View style={styles.primaryIcon}>
+            <Octicons name="feed-rocket" size={24} color="white" />
+            <Text style={styles.TextFitur}>Explore</Text>
+          </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -55,6 +67,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
   },
+  cardKosong: {},
   cardSaldo: {
     alignItems: "flex-start",
     height: 75,
@@ -83,9 +96,9 @@ const styles = StyleSheet.create({
   primaryIcon: {
     justifyContent: "center",
     alignItems: "center",
-    textAlign: "center",
   },
   TextFitur: {
+    textAlign: "center",
     color: "white",
     fontWeight: "bold",
     fontSize: 13,
