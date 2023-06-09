@@ -16,7 +16,7 @@ function saldoScreens() {
       <View style={styles.cardSaldo}>
         <View style={styles.title}>
           <Text style={styles.desinText}> Gopay </Text>
-          <Text style={styles.desinText}> 200.000.000 </Text>
+          <Text style={styles.desinText}> Rp90.000.000 </Text>
           <Text style={styles.history}> Tap For History </Text>
         </View>
       </View>
