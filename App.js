@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import DiscountScreen from "./src/screens/discountScreen";
 import SaldoCard from "./src/components/saldoCard";
 import SearchBar from "./src/components/searchBar";
+import CardMenu from "./src/components/cardMenu";
 
 export default function App() {
   return (
@@ -10,7 +11,7 @@ export default function App() {
       <SearchBar />
       <SaldoCard />
       <View style={styles.menuGojek}>
-        <Text> test </Text>
+        <CardMenu />
       </View>
       <StatusBar style="auto" />
     </View>
