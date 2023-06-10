@@ -1,12 +1,12 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 
 import iconGojek from "../constans/icon";
 
-function cardMenu(props) {
+function cardMenu() {
   return (
     <View>
-      <Text style={iconGojek.iconChat}></Text>
+      <Image source={(uri = "../assets/icon_chat.svg")} />
     </View>
   );
 }

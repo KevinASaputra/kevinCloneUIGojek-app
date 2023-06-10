@@ -10,7 +10,7 @@ export default function App() {
     <View style={styles.rootScreens}>
       <SearchBar />
       <SaldoCard />
-      <View style={styles.menuGojek}>
+      <View>
         <CardMenu />
       </View>
       <StatusBar style="auto" />
