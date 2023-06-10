@@ -4,6 +4,7 @@ import DiscountScreen from "./src/screens/discountScreen";
 import SaldoCard from "./src/components/saldoCard";
 import SearchBar from "./src/components/searchBar";
 import CardMenu from "./src/components/cardMenu";
+import { ChatIcon } from "./src/constans/icon";
 
 export default function App() {
   return (

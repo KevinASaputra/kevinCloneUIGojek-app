@@ -1,9 +1,13 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
-// import IconChat from "../assets/icon_chat.svg";
+import { ChatIcon } from "../constans/icon";
 
 function cardMenu() {
-  return <View>{/* <IconChat width={200} height={200} /> */}</View>;
+  return (
+    <View>
+      <ChatIcon style={{ backgroundColor: "green" }} width={20} height={20} />
+    </View>
+  );
 }
 
 export default cardMenu;
