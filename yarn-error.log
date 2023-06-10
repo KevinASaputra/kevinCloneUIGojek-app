@@ -1,0 +1,60 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Kevinsaputra666\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add -D babel-plugin-inline-react-native-svg
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Kevinsaputra666\AppData\Local\Android\Sdk\platform-tools;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Users\Kevinsaputra666\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Kevinsaputra666\AppData\Local\Programs\Python\Python310\;C:\Users\Kevinsaputra666\AppData\Local\Microsoft\WindowsApps;C:\Users\Kevinsaputra666\AppData\Local\Programs\Microsoft VS Code\bin;C:\adb;C:\Users\Kevinsaputra666\AppData\Local\spicetify;C:\Program Files\heroku\bin;C:\Users\Kevinsaputra666\AppData\Local\Programs\Hyper\resources\bin;D:\adb;C:\Program Files\Java\jdk-20\bin;C:\Users\Kevinsaputra666\AppData\Roaming\npm;C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/babel-plugin-inline-react-native-svg: Not found
+      at params.callback [as _callback] (C:\Users\Kevinsaputra666\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Users\Kevinsaputra666\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Users\Kevinsaputra666\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Users\Kevinsaputra666\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "clone",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web"
+    },
+    "dependencies": {
+      "expo": "~48.0.18",
+      "expo-status-bar": "~1.4.4",
+      "react": "18.2.0",
+      "react-native": "0.71.8",
+      "react-native-snap-carousel": "^3.9.1",
+      "react-native-svg": "13.4.0",
+      "react-native-svg-transformer": "^1.0.0",
+      "react-native-vector-icons": "^9.2.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.20.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
