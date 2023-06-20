@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { GoCarIcon, GoFoodIcon } from "./icon";
+import { GoCarIcon, GoFoodIcon, GoRIdeIcon, GosendIcon } from "./icon";
 import { TouchableOpacity } from "react-native";
 import { Text } from "react-native";
 
@@ -8,20 +8,55 @@ function iconMenu() {
   return (
     <View style={styles.containerRoot}>
       <View style={styles.iconRoot}>
-        <View style={styles.iconStyle}>
-          <GoCarIcon />
-        </View>
-        <View style={styles.iconStyle}>
-          <GoFoodIcon />
-        </View>
-        <View style={styles.iconStyle}>
-          <GoFoodIcon />
-        </View>
+        <TouchableOpacity>
+          <View style={styles.iconStyle}>
+            <GoRIdeIcon />
+          </View>
+          <Text style={{ marginHorizontal: 10 }}>GoCar</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={styles.iconStyle}>
+            <GoCarIcon />
+          </View>
+          <Text style={{ marginHorizontal: 4 }}>GoSend</Text>
+        </TouchableOpacity>
         <TouchableOpacity>
           <View style={styles.iconStyle}>
             <GoFoodIcon />
           </View>
-          <Text>GoFood</Text>
+          <Text style={{ marginHorizontal: 6 }}>GoRide</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={styles.iconStyle}>
+            <GosendIcon />
+          </View>
+          <Text style={{ marginHorizontal: 5 }}>GoFood</Text>
+        </TouchableOpacity>
+      </View>
+      <View style={styles.iconRoot2}>
+        <TouchableOpacity>
+          <View style={styles.iconStyle}>
+            <GoCarIcon />
+          </View>
+          <Text style={{ marginHorizontal: 10 }}>GoCar</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={styles.iconStyle}>
+            <GoFoodIcon />
+          </View>
+          <Text style={{ marginHorizontal: 4 }}>GoSend</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={styles.iconStyle}>
+            <GoFoodIcon />
+          </View>
+          <Text style={{ marginHorizontal: 6 }}>GoRide</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={styles.iconStyle}>
+            <GoFoodIcon />
+          </View>
+          <Text style={{ marginHorizontal: 5 }}>GoFood</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -40,6 +75,12 @@ const styles = StyleSheet.create({
     padding: 10,
     flexDirection: "row",
   },
+  iconRoot2: {
+    marginStart: 20,
+    marginTop: 2,
+    flexDirection: "row",
+    padding: 10,
+  },
   iconStyle: {
     width: 60,
     height: 60,
@@ -47,6 +88,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "green",
-    borderRadius: 8,
+    borderRadius: 12,
   },
 });

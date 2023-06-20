@@ -8,14 +8,19 @@ import { ChatIcon } from "./src/constans/icon";
 
 export default function App() {
   return (
-    <View style={styles.rootScreens}>
-      <SearchBar />
-      <SaldoCard />
-      <View>
-        <CardMenu />
+    <>
+      <View style={styles.rootScreens}>
+        <SearchBar />
+        <SaldoCard />
+        <View>
+          <CardMenu />
+        </View>
+        <View>
+          <DiscountScreen />
+        </View>
+        <StatusBar style="auto" />
       </View>
-      <StatusBar style="auto" />
-    </View>
+    </>
   );
 }
 

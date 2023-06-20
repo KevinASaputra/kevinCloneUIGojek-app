@@ -3,8 +3,10 @@ import { StyleSheet, Text, View } from "react-native";
 
 function discountScreen() {
   return (
-    <View style={styles.container}>
-      <Text>test</Text>
+    <View style={styles.rootContainer}>
+      <Text style={{ color: "#ff0000", fontWeight: "bold", fontSize: 15 }}>
+        Solusi mudah lunasi tagihan{" "}
+      </Text>
     </View>
   );
 }
@@ -12,9 +14,9 @@ function discountScreen() {
 export default discountScreen;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  rootContainer: {
     padding: 10,
-    margin: 100,
+    marginStart: 15,
+    marginTop: 50,
   },
 });
