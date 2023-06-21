@@ -1,9 +1,15 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import {
+  View,
+  StyleSheet,
+  ProgressBarAndroidBase,
+  ProgressBarAndroidComponent,
+} from "react-native";
 import { GoCarIcon, GoFoodIcon, GoRIdeIcon, GosendIcon } from "./icon";
 import { TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { Text } from "react-native";
+import ProgressBar from "react-native-progress/Bar";
 
 function iconMenu() {
   return (
@@ -36,11 +42,20 @@ function iconMenu() {
       </View>
       <View style={styles.rootPoint}>
         <TouchableOpacity>
-          <AntDesign name="right" size={24} color="black" />
+          <AntDesign name="right" marginEnd={8} size={24} color="black" />
         </TouchableOpacity>
         <View style={styles.contentPoint}>
           <Text>100 XP to your treasure</Text>
-          <View></View>
+          <ProgressBar
+            width={160}
+            progress={0.4}
+            color="#187700"
+            marginVertical={10}
+            borderColor="#ffffff"
+            elevation={1}
+            borderWidth={1}
+          />
+          <Text>Hi, welcome to GoClub!</Text>
         </View>
       </View>
     </View>
@@ -77,15 +92,16 @@ const styles = StyleSheet.create({
   rootPoint: {
     marginTop: 30,
     margin: 20,
-    padding: 25,
+    padding: 10,
     borderRadius: 15,
     elevation: 10,
     backgroundColor: "#ffffff",
+    alignItems: "center",
     flexDirection: "row-reverse",
   },
   contentPoint: {
     marginEnd: 50,
     alignItems: "center",
-    justifyContent: "center",
   },
+  contentLine: {},
 });

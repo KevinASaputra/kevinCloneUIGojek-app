@@ -1799,6 +1799,11 @@
     prompts "^2.4.0"
     semver "^6.3.0"
 
+"@react-native-community/progress-bar-android@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/@react-native-community/progress-bar-android/-/progress-bar-android-1.0.5.tgz"
+  integrity sha512-/IYLHdoqeDqqGQMh9/qYgIReISBIu09lLNbrn70r98+IqQe9WFLuhAr/sdrDKxCUZDQyLqUc0p3rJ50VV0tR3g==
+
 "@react-native/assets@1.0.0":
   version "1.0.0"
   resolved "https://registry.npmjs.org/@react-native/assets/-/assets-1.0.0.tgz"
@@ -5771,8 +5776,15 @@ react-native-gradle-plugin@^0.71.18:
 
 react-native-linear-gradient@^2.7.3:
   version "2.7.3"
-  resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.7.3.tgz#f77b71ed7c955e033f9cba5fc8478df57953eb27"
+  resolved "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.7.3.tgz"
   integrity sha512-iyJszlZ1Ech2c+2qV+isMvvJKyoctR9ashDkhJg1/cuSF0vQaeLV1FAYTT3qW9doxChJGxVAFfYoxotH0yi3Iw==
+
+react-native-progress@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-progress/-/react-native-progress-5.0.0.tgz#f5ac6ceaeee27f184c660b00f29419e82a9d0ab0"
+  integrity sha512-KjnGIt3r9i5Kn2biOD9fXLJocf0bwxPRxOyAgXEnZTJQU2O+HyzgGFRCbM5h3izm9kKIkSc1txh8aGmMafCD9A==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-native-snap-carousel@^3.9.1:
   version "3.9.1"
