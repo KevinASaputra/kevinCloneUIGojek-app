@@ -33,31 +33,8 @@ function iconMenu() {
           <Text style={{ marginHorizontal: 5 }}>GoFood</Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.iconRoot2}>
-        <TouchableOpacity>
-          <View style={styles.iconStyle}>
-            <GoCarIcon />
-          </View>
-          <Text style={{ marginHorizontal: 10 }}>GoCar</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={styles.iconStyle}>
-            <GoFoodIcon />
-          </View>
-          <Text style={{ marginHorizontal: 4 }}>GoSend</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={styles.iconStyle}>
-            <GoFoodIcon />
-          </View>
-          <Text style={{ marginHorizontal: 6 }}>GoRide</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={styles.iconStyle}>
-            <GoFoodIcon />
-          </View>
-          <Text style={{ marginHorizontal: 5 }}>GoFood</Text>
-        </TouchableOpacity>
+      <View style={styles.rootPoint}>
+        <Text>Kevin</Text>
       </View>
     </View>
   );
@@ -89,5 +66,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "green",
     borderRadius: 12,
+  },
+  rootPoint: {
+    marginTop: 30,
+    margin: 20,
+    padding: 25,
+    borderRadius: 15,
+    elevation: 10,
+    backgroundColor: "#ffffff",
   },
 });
