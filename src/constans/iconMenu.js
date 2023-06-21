@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import { GoCarIcon, GoFoodIcon, GoRIdeIcon, GosendIcon } from "./icon";
 import { TouchableOpacity } from "react-native";
+import { AntDesign } from "@expo/vector-icons";
 import { Text } from "react-native";
 
 function iconMenu() {
@@ -34,7 +35,13 @@ function iconMenu() {
         </TouchableOpacity>
       </View>
       <View style={styles.rootPoint}>
-        <Text>Kevin</Text>
+        <TouchableOpacity>
+          <AntDesign name="right" size={24} color="black" />
+        </TouchableOpacity>
+        <View style={styles.contentPoint}>
+          <Text>100 XP to your treasure</Text>
+          <View></View>
+        </View>
       </View>
     </View>
   );
@@ -74,5 +81,11 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     elevation: 10,
     backgroundColor: "#ffffff",
+    flexDirection: "row-reverse",
+  },
+  contentPoint: {
+    marginEnd: 50,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
