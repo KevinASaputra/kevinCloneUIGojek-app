@@ -4,6 +4,7 @@ import {
   StyleSheet,
   ProgressBarAndroidBase,
   ProgressBarAndroidComponent,
+  Image,
 } from "react-native";
 import { GoCarIcon, GoFoodIcon, GoRIdeIcon, GosendIcon } from "./icon";
 import { TouchableOpacity } from "react-native";
@@ -57,6 +58,15 @@ function iconMenu() {
           />
           <Text>Hi, welcome to GoClub!</Text>
         </View>
+        <Image
+          source={require("../assets/GO-CLUB1.png")}
+          style={{
+            width: 60,
+            height: 60,
+            marginEnd: 20,
+            borderRadius: 10,
+          }}
+        />
       </View>
     </View>
   );
@@ -74,12 +84,6 @@ const styles = StyleSheet.create({
     padding: 10,
     flexDirection: "row",
   },
-  iconRoot2: {
-    marginStart: 20,
-    marginTop: 2,
-    flexDirection: "row",
-    padding: 10,
-  },
   iconStyle: {
     width: 60,
     height: 60,
@@ -88,6 +92,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "green",
     borderRadius: 12,
+    elevation: 20,
   },
   rootPoint: {
     marginTop: 30,

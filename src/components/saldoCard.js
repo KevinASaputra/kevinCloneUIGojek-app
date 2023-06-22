@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#0f809c",
     flexDirection: "row",
     alignItems: "center",
+    elevation: 15,
   },
   cardKosong: {},
   cardSaldo: {

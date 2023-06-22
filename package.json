@@ -16,7 +16,7 @@
     "react-native": "0.71.8",
     "react-native-linear-gradient": "^2.7.3",
     "react-native-progress": "^5.0.0",
-    "react-native-snap-carousel": "^3.9.1",
+    "react-native-snap-carousel": "^4.0.0-beta.6",
     "react-native-svg": "13.4.0",
     "react-native-svg-transformer": "^1.0.0",
     "react-native-vector-icons": "^9.2.0"
