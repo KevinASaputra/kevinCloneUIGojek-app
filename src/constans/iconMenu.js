@@ -11,6 +11,7 @@ import { TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { Text } from "react-native";
 import ProgressBar from "react-native-progress/Bar";
+import Slider from "../components/slider";
 
 function iconMenu() {
   return (
@@ -68,6 +69,7 @@ function iconMenu() {
           }}
         />
       </View>
+      <Slider />
     </View>
   );
 }
