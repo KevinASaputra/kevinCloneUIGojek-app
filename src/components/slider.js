@@ -11,8 +11,6 @@ const slider = () => {
         renderItem={({ item }) => <SlideItem item={item} />}
         horizontal
         pagingEnabled
-        snapToAlignment="center"
-        showsHorizontalScrollIndicator={false}
       />
     </View>
   );
