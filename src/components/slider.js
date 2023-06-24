@@ -9,6 +9,10 @@ const slider = () => {
       <FlatList
         data={Slides}
         renderItem={({ item }) => <SlideItem item={item} />}
+        horizontal
+        pagingEnabled
+        snapToAlignment="center"
+        showsHorizontalScrollIndicator={false}
       />
     </View>
   );

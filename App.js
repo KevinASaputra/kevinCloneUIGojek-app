@@ -15,9 +15,9 @@ export default function App() {
         <View>
           <CardMenu />
         </View>
-        <View>
+        {/* <View>
           <DiscountScreen />
-        </View>
+        </View> */}
         <StatusBar style="auto" />
       </View>
     </>
